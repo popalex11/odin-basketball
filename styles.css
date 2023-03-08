@@ -1,13 +1,13 @@
 body {
     display: flex;
     flex-direction: column;
-    
+    width: 1897px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    
+    width:initial;
 }
 
 .top1 {
@@ -37,20 +37,25 @@ body {
     align-items: center;
     gap: 20px;
     padding: 30px;
+    
 }
 
 .introduction {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
     align-items: flex-start;
     padding: 30px;
+    background-color: rgba(126, 27, 27, 0.6);
+    margin: 10px;
+    border: 5px;
+    border-color: rgb(85, 21, 21);
+    border-style:groove;
 }
 
 .title {
     font-size: 64px;
-    color: aqua;
+    color:rgb(255, 217, 0);
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style:italic;
@@ -59,18 +64,59 @@ body {
 
 .description {
     font-size: 38px;
-    color: rgb(135, 105, 51);
+    color: rgb(207, 150, 44);
+    font-weight:bolder;
 }
 
  button {
     font-size: 40px;
-    background-color: orange;
+    background-color: rgb(179, 119, 7);
     color: black;
-
 }
 
 
 img {
     width: 600px;
+    height: auto;
+    opacity: 0.9;
+    border: 2px;
+    border-style:solid;
+    border-color: black;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width:inherit;
+
+}
+
+.content-title {
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.content-types {
+    display: flex;
+    width: fit-content;
+    flex-grow: 0;
+}
+
+.content1,
+.content2,
+.content3,
+.content4 {
+    width: fit-content;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
     height: auto;
 }
