@@ -1,13 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 1897px;
+    
 }
 
 .header {
     display: flex;
     flex-direction: column;
     width:initial;
+    flex-grow: 1;
 }
 
 .top1 {
@@ -19,6 +20,10 @@ body {
     padding-right: 100px;
 }
 
+.logo {
+    text-shadow: 3px 3px 3px white;   
+}
+
 .links {
     display: flex;
     gap: 20px;
@@ -26,8 +31,6 @@ body {
 }
 
 .top2 {
-    width: 1844px;
-    height: 450px;
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
@@ -37,7 +40,6 @@ body {
     align-items: center;
     gap: 20px;
     padding: 30px;
-    
 }
 
 .introduction {
@@ -51,6 +53,7 @@ body {
     border: 5px;
     border-color: rgb(85, 21, 21);
     border-style:groove;
+    border-radius: 20px;
 }
 
 .title {
@@ -60,26 +63,30 @@ body {
     font-weight: bold;
     font-style:italic;
     font-variant: small-caps;
+    text-shadow: 2px 2px 2px black;
 }
 
 .description {
     font-size: 38px;
     color: rgb(207, 150, 44);
     font-weight:bolder;
+    text-shadow: 1px 1px black;
 }
 
  button {
     font-size: 40px;
     background-color: rgb(179, 119, 7);
     color: black;
+    text-shadow: 1px 1px 1px wheat;
 }
 
 
-img {
+.title-image img {
     width: 600px;
     height: auto;
     opacity: 0.9;
-    border: 2px;
+    border: 5px;
+    border-radius: 20px;
     border-style:solid;
     border-color: black;
 }
@@ -91,32 +98,68 @@ img {
     justify-content: center;
     align-items: center;
     justify-content: center;
-    width:inherit;
-
+    width:inherit;  
+    
+    padding: 50px;
+    background-color: rgba(250, 205, 150, 0.664);
 }
 
 .content-title {
     justify-content: center;
     align-items: center;
     width: fit-content;
+    font-size: 60px;
+    padding-bottom: 50px;
+    font-family: 'Titan One', 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px white;
 }
 
 .content-types {
     display: flex;
     width: fit-content;
     flex-grow: 0;
+    gap: 100px;
 }
 
-.content1,
-.content2,
-.content3,
-.content4 {
-    width: fit-content;
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-description1,
+.image-description2,
+.image-description3,
+.image-description4 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow:  2px 2px 2px black;
+    font-family: 'Titan One', 'Times New Roman', Times, serif;
 }
 
 .image1,
 .image2,
 .image3,
 .image4 {
-    height: auto;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-color: black;
+    border: 10px rgb(233, 198, 145);
+    border-radius: 100px;
+    border-style:solid;
+    box-shadow: 2px 2px 2px black;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-itself {
+    font-size: 80px;
 }
