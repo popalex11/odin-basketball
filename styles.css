@@ -43,6 +43,7 @@ body {
     padding-bottom: 50px;
     padding-left: 200px;
     padding-right: 200px;
+    justify-content: center;
 }
 
 .introduction {
@@ -81,6 +82,14 @@ body {
     background-color: rgb(179, 119, 7);
     color: black;
     text-shadow: 1px 1px 1px wheat;
+    border-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px;
+    border-style: solid;
+    box-shadow: 3px 3px 3px rgb(41, 41, 41);
+    
 }
 
 
@@ -181,3 +190,65 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 
+.sign-up {
+    background-color: rgba(126, 81, 26, 0.575);
+}
+
+.banner {
+    background-color: rgba(131, 57, 22, 0.774);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    border: 10px;
+    border-style: solid;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px black;
+    align-items: center;
+    gap: 200px;
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.message2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(32, 32, 32);
+}
+
+.button {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.footer {
+    display: flex;
+    background-color: rgba(77, 10, 10, 0.795);
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer, 
+.sign-up,
+.quote,
+.content,
+.top2 {
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 2px;
+    border-color: black;
+    border-style: solid;
+}
